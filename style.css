@@ -1,0 +1,504 @@
+.color-grey {
+  color: #8d908e !important;
+  font-family: "Playfair Display";
+}
+
+.color-green {
+  color: #3e8847;
+}
+
+.bg-green {
+  background-color: #09270d;
+}
+
+.bg-cream {
+  background-color: #faf9f7;
+  opacity: 0.9;
+}
+
+.bg-grey {
+  background-color: #fcfbf9;
+  border-radius: 30px;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.socialMediaShow {
+  width: 20%;
+}
+
+.icon {
+  width: 30%;
+  top: 18%;
+  left: -2%;
+}
+
+.nav-link {
+  color: #092f0d !important;
+  font-family: "Poppins";
+  font-weight: 600 !important;
+}
+
+.form-control {
+  border-radius: 50px !important;
+}
+
+.search {
+  width: 10%;
+  left: 80%;
+  top: 20%;
+}
+
+.plantCollection {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Playfair Display";
+}
+
+.containerPlant {
+  text-align: center;
+}
+
+.hrline {
+  width: 20%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 4%;
+}
+
+.leaf {
+  width: 4%;
+  top: -70px;
+  border: 2px dashed gray;
+}
+
+.plantCollection,
+.OurJourney,
+.advantages,
+.chooseplan {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Playfair Display";
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  gap: 1%;
+  overflow-x: scroll;
+}
+
+.buttons {
+  display: none;
+}
+
+.carousel-images img {
+  max-width: 200px;
+  max-height: 250px;
+  margin-right: 10px;
+}
+
+.carousel-images img:last-child {
+  margin-right: 0;
+}
+
+.carousel-images .plant-name {
+  text-align: center;
+}
+
+.buttons {
+  display: none;
+}
+
+.carousel-images img {
+  max-width: 200px;
+  max-height: 250px;
+  margin-right: 10px;
+}
+
+.carousel-images img:last-child {
+  margin-right: 0;
+}
+
+.heroContent {
+  width: 80%;
+  z-index: 10;
+}
+
+.btnSection > button {
+  border-radius: 50px;
+}
+
+.heroContentText {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  text-align: left;
+  color: #3e8847;
+}
+
+.carousel-container-first {
+  overflow: hidden;
+}
+
+.carousel-images-first, .slider-bar, .progress-bar, #nextBtn1, #prevBtn1, .progessnumber {
+  display: none;
+}
+
+.active-first {
+  transform: scale(0.9);
+}
+
+.navigation-slider {
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-images {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transition: transform 0.5s ease;
+}
+
+.carousel-images .plant-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.bonsai {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.moneyPlant {
+  width: 100%;
+  top: -30%;
+  left: 3%;
+}
+
+.journey {
+  width: 100%;
+}
+
+.getStart,
+.readBlog {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.leafFull,
+.leafHalf,
+.banana {
+  display: none;
+}
+
+.cactus {
+  width: 100%;
+}
+
+.askUs {
+  width: 100%;
+  border-radius: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(203, 200, 200);
+}
+
+input[type=submit] {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #09270d;
+  color: white;
+  width: 35%;
+}
+
+.socialMedia {
+  width: 24%;
+  height: 66%;
+}
+
+.chooseIcon {
+  width: 30%;
+}
+
+.chooseboxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-lightgreen {
+  background-color: #3e8847;
+}
+
+.lady {
+  display: none;
+}
+
+.plantCare {
+  width: 50%;
+}
+
+.clients-say-section-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--background-color-light);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-client-btn,
+.next-client-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.girl {
+  width: 32%;
+  top: 8%;
+  left: -18%;
+}
+
+@media (min-width: 325px) {
+  .search {
+    width: 3%;
+    left: 92%;
+    top: 25%;
+  }
+}
+@media (min-width: 425px) {
+  .search {
+    width: 7%;
+    left: 86%;
+    top: 18%;
+  }
+  .icon {
+    width: 19%;
+    top: 24%;
+    left: -2%;
+  }
+}
+@media (min-width: 768px) {
+  .search {
+    width: 4%;
+    left: 93%;
+    top: 18%;
+  }
+  .navigation-slider {
+    position: absolute;
+    bottom: 9%;
+    left: 40%;
+  }
+  .lady {
+    width: 100%;
+    display: block;
+  }
+  .carousel-images img {
+    max-width: 200px;
+    max-height: 250px;
+    margin-right: 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons button {
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  #nextBtn {
+    outline: 2px solid #f8d99e;
+    border: none;
+    color: #f8d99e;
+  }
+  --.carousel-container-first {
+    width: 70%;
+    overflow: scroll;
+    margin: 0 auto;
+    position: relative;
+  }
+  .slider-bar, .progress-bar, #nextBtn1, #prevBtn1, .progessnumber {
+    display: block;
+  }
+  .carousel-images-first {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  .carousel-images-first img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 -50px;
+    transition: transform 0.3s ease;
+  }
+  .carousel-images-first img:hover {
+    transform: scale(0.8);
+  }
+  .slider-bar {
+    position: relative;
+    flex-grow: 1;
+    height: 4px;
+    background-color: #ddd;
+    margin: 0 10px;
+  }
+  .progress-bar {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+  }
+  .active-first {
+    transform: scale(0.8);
+  }
+  .leafFull {
+    display: block;
+    width: 5%;
+    top: -12%;
+    left: 6%;
+  }
+  .leafHalf {
+    display: block;
+    width: 2%;
+    top: 0%;
+    left: 0%;
+  }
+  .banana {
+    display: block;
+    width: 20%;
+    left: 80%;
+    top: -33%;
+  }
+  .moneyPlant {
+    width: 30%;
+    top: -30%;
+    left: 3%;
+  }
+  .journey {
+    width: 50%;
+  }
+  .icon {
+    width: 40%;
+    top: 33%;
+    left: -13%;
+  }
+  .cactus {
+    width: 50%;
+  }
+  input[type=submit] {
+    width: 15%;
+  }
+  .what-client .carousel {
+    overflow: scroll;
+    height: 200px;
+  }
+  .what-client .carousel .wrapper {
+    transform: translateX(20%);
+    transition: 0.3s ease;
+  }
+  .what-client .carousel .wrapper::-webkit-scrollbar {
+    display: none !important;
+  }
+  .what-client .carousel .carousel-card {
+    background-color: #FCFBF8;
+    flex-shrink: 0;
+    width: 55%;
+    height: 100%;
+  }
+  .what-client .carousel .carousel-card .text {
+    width: 100%;
+  }
+  .what-client .carousel .next {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  .what-client .carousel .next img {
+    width: 25px;
+    height: 25px;
+  }
+  .girl {
+    width: 22%;
+    top: 23%;
+    left: -12%;
+  }
+}
+@media (min-width: 1024px) {
+  .search {
+    width: 10%;
+    left: 80%;
+    top: 20%;
+  }
+  .icon {
+    width: 25%;
+    top: 18%;
+    left: -10%;
+  }
+  .askUs {
+    position: absolute;
+    top: 9%;
+    left: 43%;
+    width: 50%;
+  }
+  .girl {
+    width: 12%;
+    top: 8%;
+    left: -8%;
+  }
+}/*# sourceMappingURL=style.css.map */
