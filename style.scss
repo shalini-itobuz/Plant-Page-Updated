@@ -10,20 +10,25 @@
 .bg-green {
   background-color: #09270d;
 }
+
 .bg-cream {
   background-color: #faf9f7;
   opacity: 0.9;
 }
+
 .bg-grey {
   background-color: #fcfbf9;
   border-radius: 30px;
 }
-.br-50{
+
+.br-50 {
   border-radius: 50%;
 }
-.socialMediaShow{
+
+.socialMediaShow {
   width: 20%;
 }
+
 .icon {
   width: 30%;
   top: 18%;
@@ -55,17 +60,20 @@
 .containerPlant {
   text-align: center;
 }
+
 .hrline {
   width: 20%;
   height: 1px;
   background-color: gray;
   margin-top: 4%;
 }
+
 .leaf {
   width: 4%;
   top: -70px;
   border: 2px dashed gray;
 }
+
 .plantCollection,
 .OurJourney,
 .advantages,
@@ -87,9 +95,9 @@
 }
 
 .carousel-images {
-display: flex;
-gap:1%;
-overflow-x:scroll;
+  display: flex;
+  gap: 1%;
+  overflow-x: scroll;
 }
 
 
@@ -131,7 +139,7 @@ overflow-x:scroll;
   z-index: 10;
 }
 
-.btnSection > button {
+.btnSection>button {
   border-radius: 50px;
 }
 
@@ -141,11 +149,17 @@ overflow-x:scroll;
   text-align: left;
   color: #3e8847;
 }
+
 .carousel-container-first {
   overflow: hidden;
 }
 
-.carousel-images-first,.slider-bar,.progress-bar,#nextBtn1,#prevBtn1,.progessnumber {
+.carousel-images-first,
+.slider-bar,
+.progress-bar,
+#nextBtn1,
+#prevBtn1,
+.progessnumber {
   display: none;
 }
 
@@ -156,7 +170,7 @@ overflow-x:scroll;
 .navigation-slider {
   position: absolute;
   bottom: 0%;
-  left:20%;
+  left: 20%;
   width: 30%;
   display: flex;
   justify-content: space-between;
@@ -174,10 +188,10 @@ overflow-x:scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; 
-  margin-right: 20px; 
+  margin-bottom: 20px;
+  margin-right: 20px;
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
 }
 
 
@@ -185,31 +199,38 @@ overflow-x:scroll;
   margin-top: 10%;
   width: 100%;
 }
+
 .moneyPlant {
   width: 100%;
   top: -30%;
   left: 3%;
 }
+
 .journey {
   width: 100%;
 }
+
 .getStart,
 .readBlog {
   border-radius: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .leafFull,
 .leafHalf,
 .banana {
   display: none;
 }
+
 .cactus {
   width: 100%;
 }
+
 .askUs {
   width: 100%;
   border-radius: 20px;
 }
+
 input[type="text"],
 select,
 textarea {
@@ -217,6 +238,7 @@ textarea {
   outline: none;
   border-bottom: 1px solid rgb(203, 200, 200);
 }
+
 input[type="submit"] {
   border-radius: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -224,25 +246,32 @@ input[type="submit"] {
   color: white;
   width: 35%;
 }
+
 .socialMedia {
   width: 24%;
   height: 66%;
 }
+
 .chooseIcon {
   width: 30%;
 }
+
 .chooseboxShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
 }
+
 .bg-lightgreen {
   background-color: #3e8847;
 }
+
 .lady {
   display: none;
 }
+
 .plantCare {
   width: 50%;
 }
+
 .clients-say-section-container {
   text-align: center;
   padding: 40px 20px;
@@ -309,10 +338,10 @@ input[type="submit"] {
 // .even-card {
 //   background-color: green;
 // }
-.girl{
-  width:32%;
-  top:8%;
-  left:-18%;
+.girl {
+  width: 32%;
+  top: 8%;
+  left: -18%;
 }
 
 @media (min-width: 325px) {
@@ -329,6 +358,7 @@ input[type="submit"] {
     left: 86%;
     top: 18%;
   }
+
   .icon {
     width: 19%;
     top: 24%;
@@ -342,14 +372,18 @@ input[type="submit"] {
     left: 93%;
     top: 18%;
   }
+
   .navigation-slider {
     position: absolute;
     bottom: 9%;
-    left:40%;}
+    left: 40%;
+  }
+
   .lady {
     width: 100%;
     display: block;
   }
+
   .carousel-images img {
     max-width: 200px;
     max-height: 250px;
@@ -366,6 +400,7 @@ input[type="submit"] {
     margin-bottom: 10px;
     border-radius: 50%;
   }
+
   #nextBtn {
     outline: 2px solid #f8d99e;
     border: none;
@@ -378,9 +413,15 @@ input[type="submit"] {
     margin: 0 auto;
     position: relative;
   }
-  .slider-bar,.progress-bar,#nextBtn1,#prevBtn1,.progessnumber {
+
+  .slider-bar,
+  .progress-bar,
+  #nextBtn1,
+  #prevBtn1,
+  .progessnumber {
     display: block;
   }
+
   .carousel-images-first {
     display: flex;
     transition: transform 0.3s ease;
@@ -396,6 +437,7 @@ input[type="submit"] {
   .carousel-images-first img:hover {
     transform: scale(0.8);
   }
+
   .slider-bar {
     position: relative;
     flex-grow: 1;
@@ -403,99 +445,110 @@ input[type="submit"] {
     background-color: #ddd;
     margin: 0 10px;
   }
-  
+
   .progress-bar {
     position: absolute;
     z-index: 5;
     top: 0;
     left: 0;
     height: 100%;
-    width: 0; 
+    width: 0;
   }
-  
+
   .active-first {
     transform: scale(0.8);
   }
+
   .leafFull {
     display: block;
     width: 5%;
     top: -12%;
     left: 6%;
   }
+
   .leafHalf {
     display: block;
     width: 2%;
     top: 0%;
     left: 0%;
   }
+
   .banana {
     display: block;
     width: 20%;
     left: 80%;
     top: -33%;
   }
+
   .moneyPlant {
     width: 30%;
     top: -30%;
     left: 3%;
   }
+
   .journey {
     width: 50%;
   }
+
   .icon {
     width: 40%;
     top: 33%;
     left: -13%;
   }
+
   .cactus {
     width: 50%;
   }
+
   input[type="submit"] {
     width: 15%;
   }
+
   //
-  
-.what-client {
-  .carousel {
+
+  .what-client {
+    .carousel {
 
       overflow: scroll;
       height: 200px;
 
       .wrapper {
-          transform: translateX(20%);
-          transition: 0.3s ease;
+        transform: translateX(20%);
+        transition: 0.3s ease;
       }
 
       .wrapper::-webkit-scrollbar {
-          display: none !important;
+        display: none !important;
       }
 
       .carousel-card {
-          background-color: #FCFBF8;
-          flex-shrink: 0;
-          width: 55%;
-          height: 100%;
+        background-color: #FCFBF8;
+        flex-shrink: 0;
+        width: 55%;
+        height: 100%;
 
-          .text {
-              width: 100%;
-          }
+        .text {
+          width: 100%;
+        }
       }
 
 
       .next {
-          width: 50px;
-          height: 50px;
-          flex-shrink: 0;
-          border-radius: 50%;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
-          img {
-              width: 25px;
-              height: 25px;
-          }
+        img {
+          width: 25px;
+          height: 25px;
+        }
       }
-  }}
-  .girl{
+    }
+  }
+
+  .girl {
     width: 22%;
     top: 23%;
     left: -12%
@@ -508,20 +561,23 @@ input[type="submit"] {
     left: 80%;
     top: 20%;
   }
+
   .icon {
     width: 25%;
     top: 18%;
     left: -10%;
   }
+
   .askUs {
     position: absolute;
     top: 9%;
     left: 43%;
     width: 50%;
   }
-  .girl{
-    width:12%;
-    top:8%;
-    left:-8%;
+
+  .girl {
+    width: 12%;
+    top: 8%;
+    left: -8%;
   }
 }

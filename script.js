@@ -44,7 +44,7 @@ function nextSlide1() {
 function updateSliderBar() {
   const totalImages = imageUrls1.length;
   const barWidth = (currentIndex1 / (totalImages - 1)) * 100;
-  progressBar.style.backgroundColor="green";
+  progressBar.style.backgroundColor = "green";
   progressBar.style.width = `${barWidth}%`;
 }
 function prevSlide1() {
@@ -134,36 +134,40 @@ function renderImages() {
   carouselImagesContainer.innerHTML = '';
   const endIndex = Math.min(currentIndex + imagesPerPage, imageUrls.length);
   for (let i = currentIndex; i < endIndex; i++) {
-      const plantInfoContainer = document.createElement('div');
-      plantInfoContainer.classList.add('plant-info');
+    const plantInfoContainer = document.createElement('div');
+    plantInfoContainer.classList.add('plant-info');
 
-      const img = document.createElement('img');
-      img.src = imageUrls[i];
-      img.alt = `Image ${i + 1}`;
-      img.classList.add('plant-image');
+    const img = document.createElement('img');
+    img.src = imageUrls[i];
+    img.alt = `Image ${i + 1}`;
+    img.classList.add('plant-image');
 
-      const plantName = document.createElement('div');
-      plantName.textContent = plantNames[i];
-      plantName.classList.add('plant-name');
+    const plantName = document.createElement('div');
+    plantName.textContent = plantNames[i];
+    plantName.classList.add('plant-name');
 
-      plantInfoContainer.appendChild(img);
-      plantInfoContainer.appendChild(plantName);
+    plantInfoContainer.appendChild(img);
+    plantInfoContainer.appendChild(plantName);
 
-      carouselImagesContainer.appendChild(plantInfoContainer);
+    carouselImagesContainer.appendChild(plantInfoContainer);
   }
 }
 
 function nextSlide() {
   if (currentIndex + imagesPerPage < imageUrls.length) {
-      currentIndex++;
-      renderImages();
+    currentIndex++;
+
   }
+  else {
+    currentIndex = 0;
+  }
+  renderImages();
 }
 
 function prevSlide() {
   if (currentIndex > 0) {
-      currentIndex--;
-      renderImages();
+    currentIndex--;
+    renderImages();
   }
 }
 

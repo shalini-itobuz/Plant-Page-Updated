@@ -150,7 +150,12 @@
   overflow: hidden;
 }
 
-.carousel-images-first, .slider-bar, .progress-bar, #nextBtn1, #prevBtn1, .progessnumber {
+.carousel-images-first,
+.slider-bar,
+.progress-bar,
+#nextBtn1,
+#prevBtn1,
+.progessnumber {
   display: none;
 }
 
@@ -371,7 +376,11 @@ input[type=submit] {
     margin: 0 auto;
     position: relative;
   }
-  .slider-bar, .progress-bar, #nextBtn1, #prevBtn1, .progessnumber {
+  .slider-bar,
+  .progress-bar,
+  #nextBtn1,
+  #prevBtn1,
+  .progessnumber {
     display: block;
   }
   .carousel-images-first {
