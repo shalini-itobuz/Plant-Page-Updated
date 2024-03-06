@@ -2,6 +2,9 @@
   color: #8d908e !important;
   font-family: "Playfair Display";
 }
+.text-cream {
+  color: #d0d6c9;
+}
 
 .color-green {
   color: #3e8847;
@@ -26,7 +29,7 @@
 }
 
 .socialMediaShow {
-  width: 20%;
+  width: 5%;
 }
 
 .icon {
@@ -71,7 +74,6 @@
 .leaf {
   width: 4%;
   top: -70px;
-  border: 2px dashed gray;
 }
 
 .plantCollection,
@@ -83,7 +85,6 @@
   margin-bottom: 20px;
   font-family: "Playfair Display";
 }
-
 
 .carousel-container {
   display: flex;
@@ -99,7 +100,6 @@
   gap: 1%;
   overflow-x: scroll;
 }
-
 
 .buttons {
   display: none;
@@ -118,7 +118,6 @@
 .carousel-images .plant-name {
   text-align: center;
 }
-
 
 .buttons {
   display: none;
@@ -139,7 +138,7 @@
   z-index: 10;
 }
 
-.btnSection>button {
+.btnSection > button {
   border-radius: 50px;
 }
 
@@ -194,7 +193,6 @@
   font-size: 20px;
 }
 
-
 .bonsai {
   margin-top: 10%;
   width: 100%;
@@ -244,7 +242,7 @@ input[type="submit"] {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #09270d;
   color: white;
-  width: 35%;
+  width: 40%;
 }
 
 .socialMedia {
@@ -271,7 +269,11 @@ input[type="submit"] {
 .plantCare {
   width: 50%;
 }
-
+.threeLeaves {
+  left: 17%;
+  top: 96%;
+  width: 7%;
+}
 .clients-say-section-container {
   text-align: center;
   padding: 40px 20px;
@@ -308,13 +310,25 @@ input[type="submit"] {
   display: none;
 }
 
-.prev-client-btn,
-.next-client-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+.footer {
+  font-family: "Poppins";
 }
+.footerBackground {
+  background: url(./images/footer/footerBackground.png) no-repeat;
+}
+.leaveStickerAbout {
+  width: 70%;
+  z-index: 6;
+  right: -5%;
+  top: -15%;
+}
+// .prev-client-btn,
+// .next-client-btn {
+//   background-color: transparent;
+//   border: none;
+//   cursor: pointer;
+//   padding: 10px;
+// }
 
 // .clients-say-card {
 //   text-align: center;
@@ -342,6 +356,14 @@ input[type="submit"] {
   width: 32%;
   top: 8%;
   left: -18%;
+}
+textarea {
+  height: 60px;
+}
+
+textarea::placeholder {
+  text-align: left;
+  transform: translateY(30px);
 }
 
 @media (min-width: 325px) {
@@ -383,7 +405,11 @@ input[type="submit"] {
     width: 100%;
     display: block;
   }
-
+  .threeLeaves {
+    left: 22%;
+    top: 96%;
+    width: 7%;
+  }
   .carousel-images img {
     max-width: 200px;
     max-height: 250px;
@@ -501,14 +527,11 @@ input[type="submit"] {
   }
 
   input[type="submit"] {
-    width: 15%;
+    width: 60%;
   }
-
-  //
 
   .what-client {
     .carousel {
-
       overflow: scroll;
       height: 200px;
 
@@ -522,7 +545,7 @@ input[type="submit"] {
       }
 
       .carousel-card {
-        background-color: #FCFBF8;
+        background-color: #fcfbf8;
         flex-shrink: 0;
         width: 55%;
         height: 100%;
@@ -531,7 +554,6 @@ input[type="submit"] {
           width: 100%;
         }
       }
-
 
       .next {
         width: 50px;
@@ -547,11 +569,14 @@ input[type="submit"] {
       }
     }
   }
-
+  .what-client .carousel .carousel-card:hover {
+    background-color: #3e8847;
+    color: white;
+  }
   .girl {
     width: 22%;
     top: 23%;
-    left: -12%
+    left: -12%;
   }
 }
 
@@ -564,20 +589,32 @@ input[type="submit"] {
 
   .icon {
     width: 25%;
-    top: 18%;
+    top: 20%;
     left: -10%;
   }
-
+  .advantageLeaves {
+    width: 20%;
+    z-index: 5;
+    right: -4%;
+  }
   .askUs {
     position: absolute;
-    top: 9%;
+    top: 7%;
     left: 43%;
     width: 50%;
   }
 
   .girl {
     width: 12%;
-    top: 8%;
+    top: 20%;
     left: -8%;
+  }
+  .threeLeaves {
+    left: 12%;
+    top: 90%;
+    width: 7%;
+  }
+  input[type="submit"] {
+    width: 15%;
   }
 }

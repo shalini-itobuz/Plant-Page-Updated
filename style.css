@@ -3,6 +3,10 @@
   font-family: "Playfair Display";
 }
 
+.text-cream {
+  color: #d0d6c9;
+}
+
 .color-green {
   color: #3e8847;
 }
@@ -26,7 +30,7 @@
 }
 
 .socialMediaShow {
-  width: 20%;
+  width: 5%;
 }
 
 .icon {
@@ -71,7 +75,6 @@
 .leaf {
   width: 4%;
   top: -70px;
-  border: 2px dashed gray;
 }
 
 .plantCollection,
@@ -239,7 +242,7 @@ input[type=submit] {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #09270d;
   color: white;
-  width: 35%;
+  width: 40%;
 }
 
 .socialMedia {
@@ -265,6 +268,12 @@ input[type=submit] {
 
 .plantCare {
   width: 50%;
+}
+
+.threeLeaves {
+  left: 17%;
+  top: 96%;
+  width: 7%;
 }
 
 .clients-say-section-container {
@@ -303,18 +312,39 @@ input[type=submit] {
   display: none;
 }
 
-.prev-client-btn,
-.next-client-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+.footer {
+  font-family: "Poppins";
+}
+
+.footerBackground {
+  background: url(./images/footer/footerBackground.png) no-repeat;
+}
+
+.leaveStickerAbout {
+  width: 70%;
+  z-index: 6;
+  right: -5%;
+  top: -15%;
 }
 
 .girl {
   width: 32%;
   top: 8%;
   left: -18%;
+}
+
+textarea {
+  height: 60px;
+}
+
+textarea::-moz-placeholder {
+  text-align: left;
+  transform: translateY(30px);
+}
+
+textarea::placeholder {
+  text-align: left;
+  transform: translateY(30px);
 }
 
 @media (min-width: 325px) {
@@ -350,6 +380,11 @@ input[type=submit] {
   .lady {
     width: 100%;
     display: block;
+  }
+  .threeLeaves {
+    left: 22%;
+    top: 96%;
+    width: 7%;
   }
   .carousel-images img {
     max-width: 200px;
@@ -449,7 +484,7 @@ input[type=submit] {
     width: 50%;
   }
   input[type=submit] {
-    width: 15%;
+    width: 60%;
   }
   .what-client .carousel {
     overflow: scroll;
@@ -463,7 +498,7 @@ input[type=submit] {
     display: none !important;
   }
   .what-client .carousel .carousel-card {
-    background-color: #FCFBF8;
+    background-color: #fcfbf8;
     flex-shrink: 0;
     width: 55%;
     height: 100%;
@@ -482,6 +517,10 @@ input[type=submit] {
     width: 25px;
     height: 25px;
   }
+  .what-client .carousel .carousel-card:hover {
+    background-color: #3e8847;
+    color: white;
+  }
   .girl {
     width: 22%;
     top: 23%;
@@ -496,18 +535,31 @@ input[type=submit] {
   }
   .icon {
     width: 25%;
-    top: 18%;
+    top: 20%;
     left: -10%;
+  }
+  .advantageLeaves {
+    width: 20%;
+    z-index: 5;
+    right: -4%;
   }
   .askUs {
     position: absolute;
-    top: 9%;
+    top: 7%;
     left: 43%;
     width: 50%;
   }
   .girl {
     width: 12%;
-    top: 8%;
+    top: 20%;
     left: -8%;
+  }
+  .threeLeaves {
+    left: 12%;
+    top: 90%;
+    width: 7%;
+  }
+  input[type=submit] {
+    width: 15%;
   }
 }/*# sourceMappingURL=style.css.map */
