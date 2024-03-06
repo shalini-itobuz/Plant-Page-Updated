@@ -296,20 +296,8 @@ input[type=submit] {
   background-color: var(--background-color-light);
 }
 
-.d-flex {
-  display: flex;
-}
-
 .overflow-auto {
   overflow: auto;
-}
-
-.gap-5 {
-  gap: 5px;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .py-5 {

@@ -1,10 +1,12 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
 .color-grey {
   color: #8d908e !important;
   font-family: "Playfair Display";
 }
+
 .text-cream {
   color: #d0d6c9;
 }
@@ -40,10 +42,12 @@
   top: 18%;
   left: -2%;
 }
+
 .leaveBig {
   width: 100%;
   top: -25%;
 }
+
 .nav-link {
   color: #092f0d !important;
   font-family: "Poppins";
@@ -98,7 +102,6 @@
   flex-wrap: wrap;
   align-items: flex-start;
   overflow: hidden;
-  // width: 100%;
 }
 
 .carousel-images {
@@ -144,7 +147,7 @@
   z-index: 10;
 }
 
-.btnSection > button {
+.btnSection>button {
   border-radius: 50px;
 }
 
@@ -263,9 +266,10 @@ input[type="submit"] {
 .chooseboxShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
 }
+
 .choosecard:hover {
   background-color: #3e8847 !important;
-  color: white !important ;
+  color: white !important;
 }
 
 .bg-lightgreen {
@@ -279,31 +283,21 @@ input[type="submit"] {
 .plantCare {
   width: 50%;
 }
+
 .threeLeaves {
   left: 17%;
   top: 96%;
   width: 7%;
 }
+
 .clients-say-section-container {
   text-align: center;
   padding: 40px 20px;
   background-color: var(--background-color-light);
 }
 
-.d-flex {
-  display: flex;
-}
-
 .overflow-auto {
   overflow: auto;
-}
-
-.gap-5 {
-  gap: 5px;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .py-5 {
@@ -330,6 +324,7 @@ input[type="submit"] {
   right: -5%;
   top: -15%;
 }
+
 // .prev-client-btn,
 // .next-client-btn {
 //   background-color: transparent;
@@ -360,11 +355,13 @@ input[type="submit"] {
 // .even-card {
 //   background-color: green;
 // }
+
 .girl {
   width: 32%;
   top: 8%;
   left: -18%;
 }
+
 textarea {
   height: 60px;
 }
@@ -413,11 +410,13 @@ textarea::placeholder {
     width: 100%;
     display: block;
   }
+
   .threeLeaves {
     left: 22%;
     top: 96%;
     width: 7%;
   }
+
   .carousel-images img {
     max-width: 200px;
     max-height: 250px;
@@ -577,10 +576,12 @@ textarea::placeholder {
       }
     }
   }
+
   .what-client .carousel .carousel-card:hover {
     background-color: #3e8847;
     color: white;
   }
+
   .girl {
     width: 22%;
     top: 23%;
@@ -600,11 +601,13 @@ textarea::placeholder {
     top: 20%;
     left: -10%;
   }
+
   .advantageLeaves {
     width: 20%;
     z-index: 5;
     right: -4%;
   }
+
   .askUs {
     position: absolute;
     top: 7%;
@@ -617,11 +620,13 @@ textarea::placeholder {
     top: 20%;
     left: -8%;
   }
+
   .threeLeaves {
     left: 12%;
     top: 90%;
     width: 7%;
   }
+
   input[type="submit"] {
     width: 15%;
   }

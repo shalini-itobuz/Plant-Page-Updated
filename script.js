@@ -34,19 +34,20 @@ function moveToIndex(index) {
 }
 
 function nextSlide1() {
-  if (currentIndex1 < imageUrls1.length - 1) {
+  if (currentIndex1 < imageUrls1.length ) {
     moveToIndex(currentIndex1 + 1);
   } else {
-    moveToIndex(0); 
+    moveToIndex(0);
   }
 }
 
 function updateSliderBar() {
   const totalImages = imageUrls1.length;
-  const barWidth = (currentIndex1 / (totalImages - 1)) * 100;
+  const barWidth = (currentIndex1 / (totalImages)) * 100;
   progressBar.style.backgroundColor = "green";
   progressBar.style.width = `${barWidth}%`;
 }
+
 function prevSlide1() {
   if (currentIndex1 > 0) {
     moveToIndex(currentIndex1 - 1);
@@ -256,6 +257,7 @@ function nextClient() {
   translate = translate - 65;
   clientsWrapper.style.transform = `translateX(${translate}%)`;
 }
+
 function firstClient() {
   console.log("clicked");
   translate = 20;
