@@ -93,6 +93,7 @@ carouselImagesFirst.addEventListener('mouseleave', function () {
 
 startAutomatedSlide();
 //----------------------------------------------------------------------------------
+
 const imageUrlsPlantCollection = [
   './images/plantsScroll/paradise.png',
   './images/plantsScroll/rubber.png',
@@ -172,73 +173,6 @@ nextBtnPlantCollection.addEventListener('click', nextSlide);
 prevBtnPlantCollection.addEventListener('click', prevSlide);
 
 renderImages();
-
-//---------------------------------------------------------------------------------------------
-
-// const prevClientBtns = document.querySelectorAll('.prev-client-btn');
-// const nextClientBtns = document.querySelectorAll('.next-client-btn');
-// const carouselContainerClient = document.querySelector('.clients-say');
-// const cards = [];
-// const currentIndexClient=0;
-
-// function updateCarouselClient() {
-//   const cardWidth = '100vw';
-//   const offset = -currentIndexClient * cardWidth;
-//   carouselContainerClient.style.transform = `translateX(${offset}%)`;
-// }
-
-// function createCard(text, imageUrl, index) {
-//   const card = document.createElement('div');
-//   card.classList.add('clients-say-card');
-//   card.classList.add('position-relative');
-
-//   const img = document.createElement('img');
-//   img.classList.add('clients-say-card-img-top');
-//   img.classList.add('position-absolute');
-//   img.src = imageUrl;
-//   card.appendChild(img);
-
-//   const paragraph = document.createElement('p');
-//   paragraph.classList.add('card-text');
-//   paragraph.textContent = text;
-//   card.appendChild(paragraph);
-
-//   if (index % 2 === 0) {
-//     card.classList.add('even-card');
-//     card.classList.add('text-white');
-//   }
-
-//   cards.push(card);
-
-//   const prevBtn = document.createElement('button');
-//   prevBtn.classList.add('prev-client-btn');
-//   prevBtn.textContent = 'Prev';
-//   prevBtn.addEventListener('click', () => {
-//     if (currentIndexClient > 0) {
-//       currentIndexClient--;
-//       updateCarouselClient();
-//     }
-//   });
-
-//   const nextBtn = document.createElement('button');
-//   nextBtn.classList.add('next-client-btn');
-//   nextBtn.textContent = 'Next';
-//   nextBtn.addEventListener('click', () => {
-//     const numCards = cards.length;
-//     if (currentIndexClient < numCards - 3) {
-//       currentIndexClient++;
-//       updateCarouselClient();
-//     }
-//   });
-
-//   carouselContainerClient.appendChild(prevBtn);
-//   carouselContainerClient.appendChild(card);
-//   carouselContainerClient.appendChild(nextBtn);
-// }
-
-// createCard("It is a long established fact that a reader will be distracted by the readable content of a page.", "./images/client/girl.png", 0);
-// createCard("It is a long established fact that a reader will be distracted by the readable content of a page.", "./images/client/girl.png", 1);
-// createCard("It is a long established fact that a reader will be distracted by the readable content of a page.", "./images/client/girl.png", 2);
 
 //-------------------------------------------------------------------------------------------------------------
 let translate = 20;
