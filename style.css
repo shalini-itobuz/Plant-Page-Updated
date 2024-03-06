@@ -39,6 +39,11 @@
   left: -2%;
 }
 
+.leaveBig {
+  width: 100%;
+  top: -25%;
+}
+
 .nav-link {
   color: #092f0d !important;
   font-family: "Poppins";
@@ -256,6 +261,11 @@ input[type=submit] {
 
 .chooseboxShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+
+.choosecard:hover {
+  background-color: #3e8847 !important;
+  color: white !important;
 }
 
 .bg-lightgreen {

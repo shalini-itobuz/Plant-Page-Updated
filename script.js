@@ -1,9 +1,9 @@
 
 const imageUrls1 = [
-  './images/hero/plant1.png',
-  './images/hero/plant2.png',
-  './images/hero/plant1.png',
-  './images/hero/plant2.png'
+  './images/hero/cutLeavesPlant.png',
+  './images/hero/smallPlant.png',
+  './images/hero/cutLeavesPlant.png',
+  './images/hero/smallPlant.png',
 ];
 
 const carouselImagesFirst = document.querySelector('.carousel-images-first');
@@ -37,7 +37,7 @@ function nextSlide1() {
   if (currentIndex1 < imageUrls1.length - 1) {
     moveToIndex(currentIndex1 + 1);
   } else {
-    moveToIndex(0); // Return to the first image
+    moveToIndex(0); 
   }
 }
 
@@ -51,7 +51,7 @@ function prevSlide1() {
   if (currentIndex1 > 0) {
     moveToIndex(currentIndex1 - 1);
   } else {
-    moveToIndex(imageUrls1.length - 1); // Move to the last image if at the beginning
+    moveToIndex(imageUrls1.length - 1);
   }
 }
 
@@ -94,18 +94,22 @@ carouselImagesFirst.addEventListener('mouseleave', function () {
 startAutomatedSlide();
 
 const imageUrls = [
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
-  './images/plantsScroll/image1.png',
-  './images/plantsScroll/image2.png',
+  './images/plantsScroll/paradise.png',
+  './images/plantsScroll/rubber.png',
+  './images/plantsScroll/pearl.png',
+  './images/plantsScroll/paradise.png',
+  './images/plantsScroll/rubber.png',
+  './images/plantsScroll/pearl.png',
+  './images/plantsScroll/paradise.png',
+  './images/plantsScroll/rubber.png',
+  './images/plantsScroll/pearl.png',
+  './images/plantsScroll/paradise.png',
+  './images/plantsScroll/rubber.png',
+  './images/plantsScroll/pearl.png',
+  './images/plantsScroll/paradise.png',
+  './images/plantsScroll/rubber.png',
+  './images/plantsScroll/pearl.png',
+
 ];
 
 const plantNames = [
