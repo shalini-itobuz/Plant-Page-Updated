@@ -1,4 +1,4 @@
-const imageUrls1 = [
+const imageUrlsHero = [
   './images/hero/cutLeavesPlant.png',
   './images/hero/smallPlant.png',
   './images/hero/cutLeavesPlant.png',
@@ -6,57 +6,57 @@ const imageUrls1 = [
 ];
 
 const carouselImagesFirst = document.querySelector('.carousel-images-first');
-const prevBtn1 = document.getElementById('prevBtn1');
-const nextBtn1 = document.getElementById('nextBtn1');
+const prevBtnHero = document.getElementById('prevBtn1');
+const nextBtnHero = document.getElementById('nextBtn1');
 const sliderBar = document.querySelector('.slider-bar');
 const progressBar = document.querySelector('.progress-bar');
 
-let currentIndex1 = 0;
+let currentIndexHero = 0;
 
 function renderImagesFirst() {
   carouselImagesFirst.innerHTML = '';
-  imageUrls1.forEach((imageUrl1) => {
-    const img1 = document.createElement('img');
-    img1.src = imageUrl1;
-    carouselImagesFirst.appendChild(img1);
+  imageUrlsHero.forEach((imageUrl1) => {
+    const imgHero = document.createElement('img');
+    imgHero.src = imageUrl1;
+    carouselImagesFirst.appendChild(imgHero);
   });
 }
 
 renderImagesFirst();
 
 function moveToIndex(index) {
-  currentIndex1 = index;
-  const translateX = -currentIndex1 * 50;
+  currentIndexHero = index;
+  const translateX = -currentIndexHero * 50;
   carouselImagesFirst.style.transition = 'transform 0.3s ease';
   carouselImagesFirst.style.transform = `translateX(${translateX}%)`;
   updateSliderBar();
 }
 
 function nextSlide1() {
-  if (currentIndex1 < imageUrls1.length) {
-    moveToIndex(currentIndex1 + 1);
+  if (currentIndexHero < imageUrlsHero.length) {
+    moveToIndex(currentIndexHero + 1);
   } else {
     moveToIndex(0);
   }
 }
 
 function updateSliderBar() {
-  const totalImages = imageUrls1.length;
-  const barWidth = (currentIndex1 / (totalImages)) * 100;
+  const totalImages = imageUrlsHero.length;
+  const barWidth = (currentIndexHero / (totalImages)) * 100;
   progressBar.style.backgroundColor = "green";
   progressBar.style.width = `${barWidth}%`;
 }
 
 function prevSlide1() {
-  if (currentIndex1 > 0) {
-    moveToIndex(currentIndex1 - 1);
+  if (currentIndexHero > 0) {
+    moveToIndex(currentIndexHero - 1);
   } else {
-    moveToIndex(imageUrls1.length - 1);
+    moveToIndex(imageUrlsHero.length - 1);
   }
 }
 
 function automateSlide() {
-  if (currentIndex1 < imageUrls1.length - 1) {
+  if (currentIndexHero < imageUrlsHero.length - 1) {
     nextSlide1();
   } else {
     moveToIndex(0);
@@ -73,12 +73,12 @@ function stopAutomatedSlide() {
   clearInterval(automateInterval);
 }
 
-nextBtn1.addEventListener('click', function () {
+nextBtnHero.addEventListener('click', function () {
   stopAutomatedSlide();
   nextSlide1();
 });
 
-prevBtn1.addEventListener('click', function () {
+prevBtnHero.addEventListener('click', function () {
   stopAutomatedSlide();
   prevSlide1();
 });
@@ -93,7 +93,7 @@ carouselImagesFirst.addEventListener('mouseleave', function () {
 
 startAutomatedSlide();
 //----------------------------------------------------------------------------------
-const imageUrls = [
+const imageUrlsPlantCollection = [
   './images/plantsScroll/paradise.png',
   './images/plantsScroll/rubber.png',
   './images/plantsScroll/pearl.png',
@@ -103,13 +103,6 @@ const imageUrls = [
   './images/plantsScroll/paradise.png',
   './images/plantsScroll/rubber.png',
   './images/plantsScroll/pearl.png',
-  './images/plantsScroll/paradise.png',
-  './images/plantsScroll/rubber.png',
-  './images/plantsScroll/pearl.png',
-  './images/plantsScroll/paradise.png',
-  './images/plantsScroll/rubber.png',
-  './images/plantsScroll/pearl.png',
-
 ];
 
 const plantNames = [
@@ -128,29 +121,29 @@ const plantNames = [
 ];
 
 const carouselImagesContainer = document.querySelector('.carousel-images');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+const prevBtnPlantCollection = document.getElementById('prevBtn');
+const nextBtnPlantCollection = document.getElementById('nextBtn');
 
-let currentIndex = 0;
+let currentIndexPlantCollection = 0;
 const imagesPerPage = 3;
 
 function renderImages() {
   carouselImagesContainer.innerHTML = '';
-  const endIndex = Math.min(currentIndex + imagesPerPage, imageUrls.length);
-  for (let i = currentIndex; i < endIndex; i++) {
+  const endIndex = Math.min(currentIndexPlantCollection + imagesPerPage, imageUrlsPlantCollection.length);
+  for (let i = currentIndexPlantCollection; i < endIndex; i++) {
     const plantInfoContainer = document.createElement('div');
     plantInfoContainer.classList.add('plant-info');
 
-    const img = document.createElement('img');
-    img.src = imageUrls[i];
-    img.alt = `Image ${i + 1}`;
-    img.classList.add('plant-image');
+    const imgPlantCollection = document.createElement('img');
+    imgPlantCollection.src = imageUrlsPlantCollection[i];
+    imgPlantCollection.alt = `Image ${i + 1}`;
+    imgPlantCollection.classList.add('plant-image');
 
     const plantName = document.createElement('div');
     plantName.textContent = plantNames[i];
     plantName.classList.add('plant-name');
 
-    plantInfoContainer.appendChild(img);
+    plantInfoContainer.appendChild(imgPlantCollection);
     plantInfoContainer.appendChild(plantName);
 
     carouselImagesContainer.appendChild(plantInfoContainer);
@@ -158,25 +151,25 @@ function renderImages() {
 }
 
 function nextSlide() {
-  if (currentIndex + imagesPerPage < imageUrls.length) {
-    currentIndex++;
+  if (currentIndexPlantCollection + imagesPerPage < imageUrlsPlantCollection.length) {
+    currentIndexPlantCollection++;
 
   }
   else {
-    currentIndex = 0;
+    currentIndexPlantCollection = 0;
   }
   renderImages();
 }
 
 function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex--;
+  if (currentIndexPlantCollection > 0) {
+    currentIndexPlantCollection--;
     renderImages();
   }
 }
 
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
+nextBtnPlantCollection.addEventListener('click', nextSlide);
+prevBtnPlantCollection.addEventListener('click', prevSlide);
 
 renderImages();
 
