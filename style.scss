@@ -1,3 +1,6 @@
+*::-webkit-scrollbar {
+  display: none;
+}
 .color-grey {
   color: #8d908e !important;
   font-family: "Playfair Display";
@@ -320,9 +323,7 @@ input[type="submit"] {
 .footer {
   font-family: "Poppins";
 }
-.footerBackground {
-  background: url(./images/footer/footerBackground.png) no-repeat;
-}
+
 .leaveStickerAbout {
   width: 70%;
   z-index: 6;
