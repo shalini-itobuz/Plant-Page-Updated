@@ -1,4 +1,3 @@
-
 const imageUrls1 = [
   './images/hero/cutLeavesPlant.png',
   './images/hero/smallPlant.png',
@@ -34,7 +33,7 @@ function moveToIndex(index) {
 }
 
 function nextSlide1() {
-  if (currentIndex1 < imageUrls1.length ) {
+  if (currentIndex1 < imageUrls1.length) {
     moveToIndex(currentIndex1 + 1);
   } else {
     moveToIndex(0);
@@ -93,7 +92,7 @@ carouselImagesFirst.addEventListener('mouseleave', function () {
 });
 
 startAutomatedSlide();
-
+//----------------------------------------------------------------------------------
 const imageUrls = [
   './images/plantsScroll/paradise.png',
   './images/plantsScroll/rubber.png',
@@ -248,7 +247,7 @@ renderImages();
 // createCard("It is a long established fact that a reader will be distracted by the readable content of a page.", "./images/client/girl.png", 1);
 // createCard("It is a long established fact that a reader will be distracted by the readable content of a page.", "./images/client/girl.png", 2);
 
-
+//-------------------------------------------------------------------------------------------------------------
 let translate = 20;
 const clientsWrapper = document.getElementById("clients-wrapper");
 
